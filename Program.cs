@@ -52,7 +52,7 @@ while (exit == false)
     Console.WriteLine("Enter your second value: ");
     num2 = Convert.ToDouble(Console.ReadLine());
     Console.WriteLine("Do you want to add, subtract, mutiply, or divide? \"a, s, m, d\"");
-    mathOperator = Convert.ToChar(Console.ReadLine());
+    mathOperator = Convert.ToChar(Console.ReadLine().ToLower());
 
     //Calling the function that does the math for the calculator
     Calculator(num1, num2, answer, mathOperator);
